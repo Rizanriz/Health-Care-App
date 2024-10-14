@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 interface ButtonProps{
     isLoading:boolean,
-    className:string,
+    className?:string,
     children:React.ReactNode,
 }
 const SubmitButton = ({isLoading,className,children}:ButtonProps) => {
@@ -13,7 +13,7 @@ const SubmitButton = ({isLoading,className,children}:ButtonProps) => {
         {
             isLoading ? (
                 <div className='flex items-center gap-4'>
-                    <Image src={'/assets/icon/loader.svg'} alt='loader' 
+                    <Image src={'/assets/icons/loader.svg'} alt='loader' 
                     width={24} height={24} className='animate-spin'/>
                     Loading...
                 </div>
