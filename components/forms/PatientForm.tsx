@@ -69,14 +69,14 @@
                     fieldType={FormFieldType.INPUT}
                     control={form.control} name="name" label="Full name" 
                     iconSrc="/assets/icons/user.svg" placeholder="John"  />
-                    <CustomFormField 
-                    fieldType={FormFieldType.INPUT}
-                    control={form.control} name="email" label="Email" 
-                    iconSrc="/assets/icons/email.svg" placeholder="John@gmail.com" />
-                    <CustomFormField 
-                    fieldType={FormFieldType.PHONE_INPUT}
-                    control={form.control} name="phone" label="Phone number" 
-                    placeholder="(553) 243-4343" />
+                        <CustomFormField 
+                        fieldType={FormFieldType.INPUT}
+                        control={form.control} name="email" label="Email" 
+                        iconSrc="/assets/icons/email.svg" placeholder="John@gmail.com" />
+                        <CustomFormField 
+                        fieldType={FormFieldType.PHONE_INPUT}
+                        control={form.control} name="phone" label="Phone number" 
+                        placeholder="(553) 243-4343" />
 
                     <SubmitButton isLoading={isLoading} >Get started</SubmitButton>
                 </form>
